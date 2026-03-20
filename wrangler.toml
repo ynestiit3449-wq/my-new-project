@@ -1,0 +1,11 @@
+name = "image-background-remover"
+compatibility_date = "2024-11-01"
+
+[build]
+command = "npx @cloudflare/next-on-pages@latest"
+
+[site]
+bucket = ".vercel/output/static"
+
+[vars]
+# REMOVE_BG_API_KEY and CORS_ORIGIN should be added via `wrangler secret`
